@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<title>Bootstrap Carousel</title>
+
+<style>
+.carousel .item{
+    height:400px;
+    text-align:center;
+    color:white;
+    font-size:30px;
+    line-height:400px;
+}
+
+.first-slide{background:red;}
+.second-slide{background:green;}
+.third-slide{background:blue;}
+.fourth-slide{background:purple;}
+.fifth-slide{background:orange;}
+</style>
+
 </head>
+
 <body>
-    <!-- Write your code here -->
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="item first-slide">
+First Slide
+</div>
+
+<div class="item second-slide">
+Second Slide
+</div>
+
+<div class="item third-slide active">
+Third Slide
+</div>
+
+<div class="item fourth-slide">
+Fourth Slide
+</div>
+
+<div class="item fifth-slide">
+Fifth Slide
+</div>
+
+</div>
+
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+
+</div>
+
 </body>
- 
 </html>
